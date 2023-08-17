@@ -1,0 +1,62 @@
+GET - /api/v1/category
+RESPONSE DATA :
+[
+    {
+    "id":1,
+    "name":"electronics",
+    "imageUrl":"url",
+    "isActive":1    
+    }, {
+    "id":2,
+    "name":"fashion",
+    "imageUrl":"url",
+    "isActive":1    
+    }
+]
+
+GET - /api/v1/category/1
+RESPONSE DATA:
+{
+    "id":1,
+    "name":"electronics",
+    "imageUrl":"url",
+    "isActive":1
+}
+
+POST - /api/v1/category
+REQUEST PAYLOAD:
+
+    {
+    "id":1,
+    "name":"electronics",
+    "imageUrl":"url",
+    "isActive":1
+    }
+
+RESPONSE:
+{
+    "message":"Category created successfully"
+}
+
+PUT - /api/v1/category/1
+REQUEST PAYLOAD:
+{
+    "id":1,
+    "name":"grocery",
+    "imageUrl":"url",
+    "isActive":1
+}
+
+RESPONSE:
+{
+    "message":"Category updated successfully"
+}
+
+
+DELETE - /api/v1/category/2
+
+
+RESPONSE:
+{
+    "message":"Category deleted successfully"
+}
